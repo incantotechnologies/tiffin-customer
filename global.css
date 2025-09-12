@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #0000001a;
+  color: #f6f6f6b3;
+  color: #f6f6f699;
+  color: #fdfdfe;
+  color: #0546a4cc;
+  color: #7671b5;
+  color: #bea7e533;
+  color: #09b23e33;
+  color: #2d926a66;
+  color: #f5f5f5b3;
+  background-image: radial-gradient(
+    circle farthest-corner at 96.1% 7.2%,
+    #09b23e 0%,
+    #055518 100.2%
+  );
+
+  color: #f2c43833;
+  color: #0080801a;
+}
+
+h2{
+  color: #00000034
+}

@@ -1,0 +1,60 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  // NOTE: Update this to include the paths to all of your component files.
+  content: ["./app/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
+  presets: [require("nativewind/preset")],
+  theme: {
+    extend: {
+      fontFamily: {
+        anton: ["Anton"],
+        RoboLight: ["RoboLight"],
+        RoboLightItalic: ["RoboLightItalic"],
+        RoboRegular: ["RoboRegular"],
+        RoboItalic: ["RoboItalic"],
+        RoboMedium: ["RoboMedium"],
+        RoboMediumItalic: ["RoboMediumItalic"],
+        RoboBold: ["RoboBold"],
+        RoboBoldItalic: ["RoboBoldItalic"],
+        RoboBlack: ["RoboBlack"],
+        RoboBlackItalic: ["RoboBlackItalic"],
+        popp_bold: ["PoppinsBold"],
+        popp_extrabold: ["PoppinsExtraBold"],
+        SatoLight: ["SatoLight"],
+        SatoLightItalic: ["SatoLightItalic"],
+        SatoRegular: ["SatoRegular"],
+        SatoItalic: ["SatoItalic"],
+        SatoMedium: ["SatoMedium"],
+        SatoMediumItalic: ["SatoMediumItalic"],
+        SatoBold: ["SatoBold"],
+        SatoBoldItalic: ["SatoBoldItalic"],
+        SatoBlack: ["SatoBlack"],
+        SatoBlackItalic: ["SatoBlackItalic"],
+      },
+      fontSize: {
+        s: "10px",
+        sx: "8px",
+      },
+      width: {
+        90: "90%",
+        95: "95%",
+        85: "85%",
+        97: "97%",
+        94: "94%",
+        93: "93%",
+        18: "66px",
+      },
+      colors: {
+        primary: "#008080",
+        secondary: "#f2c438",
+        background: "#fdfdfe",
+      },
+      height: {
+        15: "60px",
+        18: "66px",
+        90: "90%",
+        95: "95%",
+      },
+    },
+  },
+  plugins: [],
+};

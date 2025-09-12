@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Tiffin Blox",
+    "slug": "tiffin-customer-try",
+    "scheme": "tiffinbox",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/tiffinblox.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "entryPoint": "./node_modules/expo-router/entry",
+    "splash": {
+      "image": "./assets/tiffinblox.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#008080"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/tiffinblox.png",
+        "backgroundColor": "#008080"
+      },
+      "package": "com.aneeshadiga.tiffincustomertry"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "2ce20054-a218-4819-8211-d039e3d4d015"
+      }
+    }
+  }
+}
