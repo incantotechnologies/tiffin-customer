@@ -53,7 +53,7 @@ const Signin = () => {
       const formattedNumber = `91${phoneNumber}`;
       // API Endpoint for submitting details
       const response = await axios.post(
-        "https://maneuta-backend.onrender.com/auth/vendor/verify-contact",
+        "https://tiffinblox-1.onrender.com/auth/vendor/verify-contact",
         {
           phoneNumber: formattedNumber,
         }

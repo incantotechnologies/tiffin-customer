@@ -28,7 +28,7 @@ const OrderHistory = () => {
       try {
         setLoading(true);
         const response = await axios.get(
-          "https://maneuta-backend.onrender.com/auth/customer/fetch-orders",
+          "https://tiffinblox-1.onrender.com/auth/customer/fetch-orders",
           {
             headers: {
               Authorization: `Bearer ${jwtToken}`, // Replace `yourJwtToken` with the actual JWT token

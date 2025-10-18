@@ -49,7 +49,7 @@ const WriteReview = ({ modalVisible, setModalVisible, vendorDetails }) => {
     try {
       setLoading(true);
       const response = await axios.post(
-        "https://maneuta-backend.onrender.com/auth/customer/write-review",
+        "https://tiffinblox-1.onrender.com/auth/customer/write-review",
         { ...review, vendorId: vendorDetails.vendorId },
         {
           headers: {

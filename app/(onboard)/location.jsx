@@ -49,7 +49,7 @@ const LocationComponent = () => {
   const fetchApartments = async () => {
     try {
       const response = await fetch(
-        "https://maneuta-backend.onrender.com/auth/customer/all-apartments"
+        "https://tiffinblox-1.onrender.com/auth/customer/all-apartments"
       );
       const data = await response.json();
       setApartments(data.apartments);
@@ -115,7 +115,7 @@ const LocationComponent = () => {
 
       // API Endpoint for submitting details
       const endpoint =
-        "https://maneuta-backend.onrender.com/auth/customer/signup";
+        "https://tiffinblox-1.onrender.com/auth/customer/signup";
 
       // Payload to send to the server
       const payload = {
@@ -257,7 +257,7 @@ const LocationComponent = () => {
       if (newApartment) {
         setLoading(true);
         const response = await axios.post(
-          "https://maneuta-backend.onrender.com/auth/customer/save-apartment",
+          "https://tiffinblox-1.onrender.com/auth/customer/save-apartment",
           newApartment
         );
         if (response.data.message) {

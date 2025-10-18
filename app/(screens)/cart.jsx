@@ -133,7 +133,7 @@ const CartPage = () => {
 
       // Make the POST request
       const response = await axios.post(
-        "https://maneuta-backend.onrender.com/auth/customer/place-order",
+        "https://tiffinblox-1.onrender.com/auth/customer/place-order",
         orderPayload,
         {
           headers: {

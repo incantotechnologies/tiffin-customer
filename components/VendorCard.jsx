@@ -17,7 +17,7 @@ const VendorCard = ({ product }) => {
     const fetchVendorDetails = async () => {
       try {
         const response = await axios.get(
-          `https://maneuta-backend.onrender.com/auth/customer/get-reviews?vendorId=${product.vendorId}&key=0`,
+          `https://tiffinblox-1.onrender.com/auth/customer/get-reviews?vendorId=${product.vendorId}&key=0`,
           {
             headers: {
               Authorization: `Bearer ${jwtToken}`, // Replace with actual token if required

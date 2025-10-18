@@ -25,7 +25,7 @@ export const FoodItemsProvider = ({ children }) => {
     const fetchJWTToken = async () => {
       try {
         //await AsyncStorage.clear()
-        axios.get("https://maneuta-backend.onrender.com");
+        axios.get("https://tiffinblox-1.onrender.com");
         const token = await AsyncStorage.getItem("cjwtToken");
         if (token) {
           setJwtToken(JSON.parse(token));
@@ -67,7 +67,7 @@ export const FoodItemsProvider = ({ children }) => {
       );
 
       const foodResponse = await axios.post(
-        `https://maneuta-backend.onrender.com/auth/customer/get-food-items`,
+        `https://tiffinblox-1.onrender.com/auth/customer/get-food-items`,
         {
           apartmentId,
           foodItemIds, // Axios automatically serializes arrays by repeating keys: foodItemIds=1&foodItemIds=2
@@ -269,7 +269,7 @@ export const FoodItemsProvider = ({ children }) => {
     if (jwtToken && apartmentId) {
       try {
         const response = await fetch(
-          `https://maneuta-backend.onrender.com/auth/customer/get-vendors?apartmentId=${apartmentId}`,
+          `https://tiffinblox-1.onrender.com/auth/customer/get-vendors?apartmentId=${apartmentId}`,
           {
             method: "GET",
             headers: {
@@ -298,7 +298,7 @@ export const FoodItemsProvider = ({ children }) => {
     if (jwtToken && apartmentId) {
       try {
         const response = await fetch(
-          `https://maneuta-backend.onrender.com/auth/customer/customer-details?apartmentId=${apartmentId}`,
+          `https://tiffinblox-1.onrender.com/auth/customer/customer-details?apartmentId=${apartmentId}`,
           {
             method: "GET",
             headers: {
@@ -329,7 +329,7 @@ export const FoodItemsProvider = ({ children }) => {
     if (jwtToken && apartmentId) {
       try {
         const response = await axios.post(
-          `https://maneuta-backend.onrender.com/auth/customer/available-orders`,{foodItemIds},
+          `https://tiffinblox-1.onrender.com/auth/customer/available-orders`,{foodItemIds},
           {
             headers: {
               Authorization: `Bearer ${jwtToken}`,
@@ -349,7 +349,7 @@ export const FoodItemsProvider = ({ children }) => {
   // const fetchCombos = async () => {
   //   try {
   //     const response = await axios.get(
-  //       `https://maneuta-backend.onrender.com/auth/customer/combo-details?apartmentId=${apartmentId}`,
+  //       `https://tiffinblox-1.onrender.com/auth/customer/combo-details?apartmentId=${apartmentId}`,
   //       {
   //         headers: {
   //           Authorization: `Bearer ${jwtToken}`,

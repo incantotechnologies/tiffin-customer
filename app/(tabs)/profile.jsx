@@ -101,7 +101,7 @@ const Profile = () => {
 
     try {
       const response = await axios.post(
-        `https://maneuta-backend.onrender.com/auth/customer/customer-query`,
+        `https://tiffinblox-1.onrender.com/auth/customer/customer-query`,
         { query: helpQuery },
         {
           headers: {

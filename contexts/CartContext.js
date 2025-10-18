@@ -26,7 +26,7 @@ export const CartProvider = ({ children }) => {
   const addToCart = async (item, quantity, selectedDeliveryOption) => {
     try {
       const response = await fetch(
-        "https://maneuta-backend.onrender.com/auth/customer/reserve-cart",
+        "https://tiffinblox-1.onrender.com/auth/customer/reserve-cart",
         {
           method: "POST",
           headers: {
@@ -88,7 +88,7 @@ export const CartProvider = ({ children }) => {
     const { foodItemId } = item;
     try {
       const response = await fetch(
-        "https://maneuta-backend.onrender.com/auth/customer/remove-cart",
+        "https://tiffinblox-1.onrender.com/auth/customer/remove-cart",
         {
           method: "POST",
           headers: {
@@ -132,7 +132,7 @@ export const CartProvider = ({ children }) => {
     if (cartItems.length === 0) return;
     try {
       await fetch(
-        `https://maneuta-backend.onrender.com/auth/customer/remove-cart`,
+        `https://tiffinblox-1.onrender.com/auth/customer/remove-cart`,
         {
           method: "POST",
           headers: {

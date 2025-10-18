@@ -49,7 +49,7 @@ const Verify = () => {
       // API Endpoint for submitting details
       setLoading(true);
       const response = await axios.post(
-        "https://maneuta-backend.onrender.com/auth/vendor/verify-contact",
+        "https://tiffinblox-1.onrender.com/auth/vendor/verify-contact",
         {
           phoneNumber: formattedNumber,
         }
@@ -79,7 +79,7 @@ const Verify = () => {
       }
       setLoading(true);
       const response = await axios.post(
-        "https://maneuta-backend.onrender.com/auth/customer/check-user",
+        "https://tiffinblox-1.onrender.com/auth/customer/check-user",
         { phoneNumber }
       );
 

@@ -59,7 +59,7 @@ const ChatBox = () => {
   const fetchVendorDetails = async () => {
     try {
       const response = await axios.get(
-        `https://maneuta-backend.onrender.com/auth/customer/get-reviews?vendorId=${id}&key=1`,
+        `https://tiffinblox-1.onrender.com/auth/customer/get-reviews?vendorId=${id}&key=1`,
         {
           headers: {
             Authorization: `Bearer ${jwtToken}`, // Replace with actual token if required
